@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'reduxdj:react-meteor-cjsx',
+  name: 'reduxfj:react-meteor-cjsx',
   version: '0.0.1',
   summary: 'Supports React on Meteor Platform, with CJSX conversion support on the fly.',
   git: 'https://github.com/reduxdj/react-meteor-cjsx.git',
@@ -28,7 +28,7 @@ Package.registerBuildPlugin({
 
 
 Package.onUse(function(api) {
-  api.use('meteorhacks:npm');
+  api.use('meteorhacks:npm@1.0.3');
   api.use("templating@1.1.1");
   api.versionsFrom('1.1.0.2');
   api.addFiles([
@@ -56,8 +56,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('meteorhacks@1.0.3')
   api.use('tinytest');
-  api.use('reduxdj:react-meteor-cjsx');
+  api.use('reduxfj:react-meteor-cjsx');
   api.addFiles('react-meteor-cjsx-tests.js');
 });
