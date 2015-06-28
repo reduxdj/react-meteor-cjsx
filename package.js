@@ -58,5 +58,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('reduxdj:react-meteor-cjsx');
-  api.addFiles('reactmeteorcjsx-tests.js');
+  api.addFiles('react-meteor-cjsx-tests.js');
 });
